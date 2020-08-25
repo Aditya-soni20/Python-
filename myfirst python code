@@ -1,0 +1,70 @@
+import pyttsx3
+import os
+pyttsx3.speak("welcome to my program")
+print()
+
+print()
+print("                                   --------------------------->  Welcome To My Program  <---------------------------            ")
+print()
+ 
+while True:
+
+     print("what do you want to open: " , end= " ")
+     x = input()
+
+     if(("run" in x) or  ("open" in x ) or ("start" in x)) and (("chrome" in x) or ("browser" in x)):
+        pyttsx3.speak("you want to open chrome")
+        print("\n")
+        print("we will open chrome for you:")
+        os.system("chrome")
+
+      
+        
+        print("\n")
+
+     elif(("run" in x) or  ("open" in x) or ("start" in x)) and (("notepad" in x) or ("editor" in x)):
+        pyttsx3.speak("you want to open Notepad")
+        print("\n")
+        print("we will open Notebook for you:")
+        os.system("notepad")
+
+       
+        print("\n")
+
+     elif(("run" in x) or  ("open" in x) or ("start" in x)) and (("video player" in x) or ("player" in  x) or ("media player" in x)):
+        pyttsx3.speak("you want to open video player")
+        print("\n")
+        print("we will open player for you:")
+        os.system("wmplayer")
+        
+        print("\n")
+  
+     elif(("run" in x) or  ("open" in x ) or ("start" in x)) and (("paint" in x) or ("drawing" in x)):
+        pyttsx3.speak("you want to open paint")
+        print("\n")
+        print("we will open paint for you:")
+        os.system("mspaint")
+       
+       
+        print("\n")
+
+     elif(("run" in x) or  ("open" in x ) or ("start" in x)) and (("virtual box" in x) or ("virtual box" in  x)):
+        pyttsx3.speak("you want to open virtual box")
+        print("\n")
+        print("we will open virtual box for you:")
+        os.system("virtualBox")
+       
+       
+        print("\n")
+
+     elif(("exit" in x) or ("quit" in x) or ("stop" in x)):
+        pyttsx3.speak("thank you so much")
+        print("                                 ----------------------->  Thank you <------------------------------")
+        break 
+
+     else:
+      print("\n")
+      print("dont support")
+      print('\n')
+      print("                ------------------------------------------------------------            ")
+      print('\n')
